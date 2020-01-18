@@ -118,7 +118,7 @@ public class Echo extends RESTService {
     if(echoResponse_condition) {
       JSONObject echoResult = new JSONObject();
 
-      echoResult.put("echoResponse", echoPayload)
+      echoResult.put("echoResponse", echoPayload);
 
       return Response.status(HttpURLConnection.HTTP_OK).entity(echoResult.toJSONString()).build();
     }
